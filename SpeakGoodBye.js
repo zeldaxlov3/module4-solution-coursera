@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Module 4 Solution </title>
-  <script src="SpeakHello.js"></script>
-  <script src="SpeakGoodBye.js"></script>
-  <script src="script.js"></script>
-</head>
-<body>
-  <h1>Module 4 Solution Starter</h1>
-</body>
-</html>
+(function (window) {
+  var speakWord = "Good Bye";
+  var byeSpeaker = {};
+  byeSpeaker.speak = function speak(name) {
+    console.log(speakWord + " " + name);
+  }
+
+  window.byeSpeaker = byeSpeaker;
+})(window);
